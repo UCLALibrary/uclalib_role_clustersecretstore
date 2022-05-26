@@ -1,0 +1,9 @@
+---
+
+- import_tasks: create_team_secrets.yml
+  tags:
+    - create-secret
+
+- import_tasks: create_team_clustersecretstore.yml
+  tags:
+    - create-css

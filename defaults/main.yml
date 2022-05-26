@@ -1,0 +1,11 @@
+---
+
+k8s_user: "helm"
+
+external_secrets_aws_access: {}
+#  team1:
+#    aws_access_key_b64: ""
+#    aws_secret_access_key_b64: ""
+#  team2:
+#    aws_access_key_b64: ""
+#    aws_secret_access_key_b64: ""
