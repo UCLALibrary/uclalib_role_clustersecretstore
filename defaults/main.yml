@@ -2,6 +2,8 @@
 
 k8s_user: "helm"
 
+k8s_context: ""
+
 external_secrets_aws_access: {}
 #  team1:
 #    aws_access_key_b64: ""
