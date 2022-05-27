@@ -40,6 +40,7 @@ Role Variables
 --------------
 
   * `k8s_user` - Defines the user to run the kubectl commmands to provision the Kubernetes resources (default: `helm`)
+  * `k8s_context` - Defines the Kubernetes cluster context to use for provisioning resources (no default is set - you must define this at runtime)
   * `external_secrets_aws_access` - Defines the dictionary variable specifying each teams AWS access credentials
     * Example definition of this variable:
     ```
@@ -86,4 +87,10 @@ Example Playbook
 
   roles:
     - { role: uclalib_role_clustersecretstore }
+```
+
+Example Playbook Command Line Execution
+--------------------------------------
+```
+$ ansible-playbook -i inventory.ini plays/uclalib_clustersecretstore.yml -e 'k8s_context=name_of_context_in_kubeconfig' -v
 ```
